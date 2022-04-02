@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste NerdWeb</title>
+
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/script.js" defer></script>
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+    </head>
+    <body>
+        <div id="nav-superior"> <!-- Inicio  nav-superior -->
+            <h1>Nerdweb</h1>
+            <div class="navegacao">
+                <ul>
+                    <li>
+                        <a href="#">Nerdweb</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Atendimento</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
+            <div class="lateral">
+                <select>
+                    <option>DIA A DIA</option>
+                </select>
+                <a><i class="fa-solid fa-user-large"></i></a>
+                <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </div>
+        </div> <!-- Fim  nav-superior -->
+        <header>
+            <nav>
+                <select>
+                    <option>SITES</option>
+                </select>
+                <div class="navegacao2"> 
+                    <ul>
+                        <li>
+                            <a href="#">REDES SOCIAIS</a>
+                        </li>
+                        <li>
+                            <a href="#">E-COMMERCE</a>
+                        </li>
+                        <li>
+                            <a href="#">MIDIA ONLINE</a>
+                        </li>
+                        <li>
+                            <a href="#">LANDING PAGES</a>
+                        </li>
+                    </ul>
+                    <input type="text" placeholder="Digite sua pesquisa"> 
+                </div>
+            </nav>
+            <div>
+                <img src="img/banner.png" 
+                    style="border-left: 2px solid #71D8FF;
+                           border-right: 2px solid #71D8FF;
+                           border-bottom: 2px solid #71D8FF;
+                    ">
+            </div>
+        </header>
+        <main>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <h2>Descubra os serviços Nerdweb <br>que mais combinam com a sua empresa</h2>
+                            <button>VER SERVIÇOS</button>
+                        </div>
+                        <div>
+                            <img src="img/alt_route_black_24dp (1).svg" style="width: 120px;height: 120px;">
+                            <h2 style="margin-left: 30px; margin-bottom: 5px; margin-top: -10px;">Título</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <h2>Descubra os serviços Nerdweb <br>que mais combinam com a sua empresa</h2>
+                            <button>VER SERVIÇOS</button>
+                        </div>
+                        <div>
+                            <img src="img/inventory_black_24dp (1).svg" style="width: 120px;height: 120px;">
+                            <h2 style="margin-left: 25px; margin-bottom: 5px; margin-top: -10px;">Serviço</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <h2>Descubra os serviços Nerdweb <br>que mais combinam com a sua empresa</h2>
+                            <button>VER SERVIÇOS</button>
+                        </div>
+                        <div>
+                            <img src="img/headset_mic_black_24dp (1).svg" style="width: 120px;height: 120px;">
+                            <h2 style="margin-left: 18px; margin-bottom: 5px; margin-top: -10px;">Exemplo</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <script>
+                
+                let swiper = new Swiper('.swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 100,
+                    slidesPerGroup: 1,
+                    pagination: {
+                       el: '.swiper-pagination'
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                      el: '.swiper-scrollbar',
+                    },
+
+                    breakpoints: {
+                        540: {
+                            slidesPerView: 1,
+                            spaceBetween: 100,
+                            slidesPerGroup: 1,
+                        }
+                    }
+                });
+
+            </script>
+            <section id="prod">
+                <h2 style="margin-top: 50px;margin-left: 500px; margin-bottom: 20px;color: #005271;">Conheça todos os produtos Nerdweb</h2>
+                <div id="produtos">
+                    <img src="img/LAPTOP.png">
+                    <img src="img/PHONE.png">
+                    <img src="img/SHOP.png">
+                    <img src="img/LAPTOP.png">
+                    <img src="img/PHONE.png">
+                    <img src="img/SHOP.png">
+                </div>
+                <button style="padding: 5px;margin-top: 30px;margin-left: 600px;background: #71D8FF;border: none;color: #005271;">VER TODOS PRODUTOS</button>
+            </section>
+            <section id="time">
+                <img src="img/bg time.png">
+                <div id="position-time">
+                    <h2>Faça parte do nosso time de nerds</h2>
+                    <p>
+                        Le Lorem Ipsum est simplement <br> du faux texte employé dans la composition.
+                    </p>
+                    <button>Cadastre-se</button>
+                </div>
+            </section>
+            <h2 style="color: #005271; margin-left: 560px; margin-bottom: 15px;">Seleção de serviços</h2>
+            <h4 style="color: #0089BC; margin-left: 550px; margin-bottom: 15px;">Conheça nossa seleção especial</h4>
+            <section id="servico">
+                <div>
+                    <img src="img/Imagem card servi+ºo@2x.png" style="width: 250px;height: 200px;position: relative;top: 0px;left: -56px;">
+                    <div id="front1">
+                        <h3 style="color: #005271;">Serviço de teste de front-end</h3>
+                        <p style="color: black;margin-bottom: 15px;">
+                            Le Lorem Ipsum est simplement du faux<br> texte employé dans la<br> composition 
+                            et la mise en page avant impression.
+                        </p>
+                        <a>Conhecer</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/Imagem card servi+ºo.png" style="width: 250px;height: 200px;position: relative;top: 0px;left: 0px;">
+                    <div id="front2">
+                        <h3 style="color: #005271;">Serviço de teste de front-end</h3>
+                        <p style="color: black;margin-bottom: 15px;">
+                            Le Lorem Ipsum est simplement du faux texte employé dans la composition 
+                            et la mise en page avant impression.
+                        </p>
+                        <a>Conhecer</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/Imagem card servi+ºo@2x.png" style="width: 250px;height: 200px;position: relative;top: 10px;left: 80px;">
+                    <div id="front3">
+                        <h3 style="color: #005271;margin-top: 10px;">Serviço de teste de front-end</h3>
+                        <p style="color: black;margin-bottom: 5px;margin-top: -15px;">
+                            Le Lorem Ipsum est simplement <br> du faux texte employé dans la composition.
+                        </p>
+                        <a>Conhecer</a>
+                    </div>
+                </div>
+            </section>
+            <section id="conheca">
+                <img src="img/BG CONHE+çA.png">
+                <div class="position">
+                    <h2>Conheça a visão Nerdweb e entenda<br> nossa história</h2>
+                    <p>
+                        Le Lorem Ipsum est simplement <br> du faux texte employé dans la composition.
+                    </p>
+                    <button>Ir para sobre</button>
+                </div>
+            </section>
+            <section id="selo">
+                <div>
+                    <h4>Le Lorem Ipsum est simplement <br> du faux texte employé dans la composition.</h4>
+                    <p>
+                        Le Lorem Ipsum est simplement <br> du faux texte employé dans la composition.<br>
+                        Le Lorem Ipsum est simplement <br> du faux texte employé dans la composition.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/selo-wgc.png">
+                </div>
+                <div>
+                    <img src="img/principle-2.png">
+                </div>
+                <div>
+                    <img src="img/principle-3.png">
+                </div>
+            </section>
+            <section id="formulario">
+                <div id="h">
+                    <h2>Novidades <br> e descontos especiais</h2>
+                    <h4>Descubra com a gente uma vida<br> nova, saudável, cheia de sabor e<br> desconto!</h4>
+                </div>
+                <div id="i">
+                    <input type="text" placeholder="Nome"><br>
+                    <input type="text" placeholder="Email"><br>
+                    <button>Cadastrar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <img src="img/logo.png">
+            </div>
+            <div>
+                <h3 style="padding-top: 15px;">NERDWEB</h3>
+                <p>
+                    Sobre<br>
+                    Nossos princípios<br>
+                    Funcionários<br>
+                    Trabalhe conosco
+                </p>
+            </div>
+            <div>
+                <h3>AJUDA</h3>
+                <p>
+                    Prazos e Entregas<br>
+                    Troca e Devoluções<br>
+                    Políticas de Privacidade
+                </p>
+            </div>
+            <div>
+                <h3>ATENDIMENTO</h3>
+                <p>
+                    Dúvidas Frequentes<br>
+                    (41) 3333-3333<br>
+                    teste@nerdweb.com.br
+                </p>
+            </div>
+            <div>
+                <h3>HORÁRIO DE ATENDIMENTO</h3>
+                <p>
+                    De segunda a sexta <br> das 08h00 às 12h00 e<br>
+                    das 13h00 às 17h40
+                </p>
+            </div>
+        </footer>
+        <div id="rodape">
+            <hr>
+            <p>2022 Nerdweb - Extreme Hosting.Todos os direitos reservados</p>
+            <div id="icones">
+                <h4>Fique em sintonia com a gente</h4>
+                <div>
+                    <i class="fa-brands fa-facebook" style="margin-top: 5px;"></i>
+                    <i class="fa-brands fa-instagram" style="margin-top: 5px; margin-left: 30px;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="margin-top: 5px; margin-left: 30px;"></i>
+                    <i class="fa-brands fa-twitter" style="margin-top: 5px; margin-left: 30px;"></i>
+                    <i class="fa-brands fa-youtube" style="margin-top: 5px; margin-left: 30px;"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
